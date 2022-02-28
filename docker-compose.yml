@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  web-app:
+    build: ./frontend/webapp
+    ports:
+      - "5000:8080"
+      
+  helloworld-service:
+    build: ./backend/helloworld
+    ports:
+      - "5001:8080"
+
+  counter-service:
+    build: ./backend/counter
+    ports:
+      - "5002:8080"
+
